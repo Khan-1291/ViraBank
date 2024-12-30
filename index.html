@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViraBank</title>
+    <link rel="stylesheet" href="bank.css">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"> <img src="logo.jpeg" alt="ViraBank"> <span>ViraBank</span> </div>
+            <div class="navbarLinks">
+                <a href="#features">Features</a>
+                <a href="#Operations">Operations</a>
+                <a href="#nosure">Testemonials</a>
+                <button id="createAccount">Open Account</button>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div id="loader" class="loader"></div>
+
+
+<section>
+  <div class="container">
+        <!-- Signup Form -->
+         <span id="cross">&cross;</span>
+        <div id="signup-form" class="form-container active">
+            <form>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="Full Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email" required>
+
+                <label for="signup-number">Number:</label>
+                <input type="number" id="signup-number" name="Contact Number" required>
+
+                <button type="submit">Create Account</button>
+            </form>
+            <p class="toggle-link" onclick="showLoginForm()">Already have an account? Login here</p>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form-container">
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="Username" required>
+
+                <label for="login-number">Number:</label>
+                <input type="number" id="login-number" name="Contact Number" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p class="toggle-link" onclick="showSignupForm()">Don't have an account? Sign up here</p>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+
+
+        <section style="min-height: 500px">
+            <div class="qute1">
+                <div class="rightcontent">
+                    <h1>When <strong id="content1">banking</strong> embraces <br> <strong id="content1">
+                            simplicity...</strong></h1>
+                    <h2>A simpler banking experience for a simpler life...</h2>
+                    <a href="#features">Learn more &downarrow;</a>
+                </div>
+                <div class="leftcontent">
+                    <div>
+                        <img src="fve.jpeg" alt="">
+                        <img src="./img/card.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="fve.jpeg" alt="" height="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+
+            <div class="features" id="features">
+                <h3>features</h3>
+                <p>Everything you need in a modrn bank and more...</p>
+            </div>
+
+            <div class="grid">
+
+                <div class="tag1"><img src="./img/digital.jpg" alt=""></div>
+                <div class="text">
+                    <p id="circle"></p>
+                    <p id="title">100% digital bank</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit eius eligendi
+                        unde sequi molestiae in laboriosam iure numquam, et ut explicabo quod reiciendis at fugiat
+                        aperiam
+
+                    </p>
+                </div>
+                <div class="text">
+                    <p id="circle"></p>
+                    <p id="title">Watch your money grow</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit eius eligendi
+                        unde sequi molestiae in laboriosam iure numquam, et ut explicabo quod reiciendis at fugiat
+                        aperiam
+                    </p>
+                </div>
+                <div class="tag1"><img src="./img/card.jpg" alt=""></div>
+
+                <div class="tag1"><img src="./img/grow.jpg" alt=""></div>
+                <div class="text">
+                    <p id="circle"></p>
+                    <p id="title">100% Free Debit Card Included</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit eius eligendi
+                        unde sequi molestiae in laboriosam iure numquam, et ut explicabo quod reiciendis at fugiat
+                        aperiam
+                    </p>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <div class="Operations" id="Operations">
+                <h3>Operations</h3>
+                <p>Everything as simple as possible, but no simpler...</p>
+            </div>
+
+
+            <div class="operationSection">
+                <div class="operationsect">
+                    <button id="sectBtn1">01 Instant Transfar</button>
+                    <button id="sectBtn2">02 Instant Loans</button>
+                    <button id="sectBtn3">03 Instant Closing</button>
+                </div>
+                <p id="circleLogo"></p>
+                <p id="operationheading"></p>
+                <p id="operationp">
+                </p>
+
+
+
+            </div>
+
+
+            <hr>
+
+
+        </section>
+
+        <section>
+
+            <div class="Operations" id="Operations" >
+                <h3 id="nosure">Not sure yet?</h3>
+                <p>
+                    Millions of Bankists are already making their lifes simpler.
+                </p>
+            </div>
+            <div class="checkbox">
+                <input type="radio" name="" id="radio">
+                <input type="radio" name="" id="radio">
+                <input type="radio" name="" id="radio">
+
+            </div>
+
+<button id="left">&leftarrow;</button>
+<button id="right">&rightarrow;</button>
+            <div class="cardSection">
+                
+              
+
+
+
+            </div>
+
+
+            <hr>
+
+
+        </section>
+
+
+
+
+
+
+    </main>
+    <footer>
+
+<div id="footer1"><p>The best day to join Bankist was one year <br> ago. The second best is today!</p></div>
+<div id="footer2"><button id="createAccount">Open Your Free Account Today</button></div>
+
+
+<hr>
+<div class="quicklinks">
+    <a href="">About</a>
+    <a href=""> Pricing</a>
+    <a href="">Terms of Use</a>
+    <a href=""> Privacy Policy</a>
+    <a href="">Careers</a>
+    <a href=""> Blog</a>
+    <a href="">Contact Us</a>
+</div>
+
+
+
+<div class="logo"> <img src="logo.jpeg" alt="ViraBank"> <span>ViraBank</span> </div>
+
+<p id="copy">&copy; Zohaib Khan | Practice project  <a href="https://www.linkedin.com/in/zohaib-khan">Linkden</a> <a href="https://khan-1291.github.io/zohaibKhan/">Personal Website</a>        </p>
+    </footer>
+    <script src="bank.js"></script>
+</body>
+
+</html>

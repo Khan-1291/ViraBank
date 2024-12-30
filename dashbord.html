@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViraBank</title>
+    <link rel="stylesheet" href="bank.css">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> <img src="logo.jpeg" alt="ViraBank"> <span>ViraBank</span> </div>
+            <div class="navbarLinks">
+                <!--  
+                <a href="index.html">Dashboard</a>
+
+                 <a href="#Operations">Transiction</a>
+                <a href="#nosure">Profile</a> !-->
+                <button id="logout">Logout</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="loader" class="loader"></div>
+
+        <div class="greet">
+            <h1><span id="username"></span> !! Welcome TO Your Dashboard</h1>
+        </div>
+        <section id="profile">
+        <div id="user-info"></div>
+           
+            <div class="AccountManagment">
+                <button id="deposit">Deposit Money</button>
+                <button id="withDraw">Withdraw Money</button>
+                <button id="transiction">Transfar Money</button>
+                <button id="History"> Transiction History</button>
+            </div>
+
+
+        </section>
+
+        <section class="account">
+            <div class="deposit" id="deposit-section">
+                <p>Deposit</p>
+                <form id="deposit-form">
+                    <label for="deposit-amount">Amount:</label>
+                    <input type="number" id="deposit-amount" name="deposit-amount" placeholder="Enter amount" required>
+
+                    <label for="deposit-description">Description (Optional):</label>
+                    <input type="text" id="deposit-description" name="deposit-description" placeholder="Add a note">
+
+                    <button type="submit">Deposit</button>
+                    <button type="button" id="cancel-deposit">Cancel</button>
+                </form>
+            </div>
+            <div class="withdraw" id="with-section">
+                <p>Withdraw</p>
+                <form id="with-form">
+                    <label for="WithDraw-amount">Amount:</label>
+                    <input type="number" id="with-amount" name="With-amount" placeholder="Enter amount" required>
+
+                    <label for="WithDraw-description">Description (Optional):</label>
+                    <input type="text" id="WithDraw-description" name="deposit-description" placeholder="Add a note">
+
+                    <button type="submit">With Draw</button>
+                    <button type="button" id="cancel-with">Cancel</button>
+                </form>
+            </div>
+            <div class="transfar" id="transfar-section">
+                <form id="transfar-form">
+                    <p>Transfer Amount</p>
+
+                    <label for="transfar-account">Enter Account Number:</label>
+                    <input type="number" id="transfar-account" minlength="11" maxlength="11" name="transfar-account"
+                        placeholder="Enter Account Number" required />
+
+                    <label for="transfar-amount">Enter Amount:</label>
+                    <input type="number" id="transfar-amount" name="transfar-amount" placeholder="Enter Amount"
+                        required />
+
+                    <label for="transfar-description">Description (Optional):</label>
+                    <input type="text" id="transfar-description" name="transfar-description" placeholder="Add a note" />
+
+                    <button type="submit">Transfer</button>
+                    <span id="cross"
+                        style="font-size: xx-large;cursor: pointer;margin-right: 10px;"><button>Cancel</button></span>
+                </form>
+            </div>
+
+            <div class="transiction" id="transictionHistory">
+                <p style="padding:30px;">Transiction History</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Account Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Transactions will be appended here -->
+                    </tbody>
+                </table>
+                
+
+                
+                <button type="button" id="cancel-history">Ok</button>
+
+
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+        <div id="transaction-success" class="transaction-message">
+            <h2>Transaction Successful!</h2>
+            <p><strong>Type:</strong> <span id="transaction-type">Withdrawal</span></p>
+            <p><strong>Amount:</strong> <span id="transaction-amount">0.00</span> PKR</p>
+            <p><strong>Date:</strong> <span id="transaction-date">01-Jan-2024</span></p>
+            <p><strong>Description:</strong> <span id="transaction-description">No description provided</span></p>
+            <button id="close-transaction-message">OK</button>
+        </div>
+        
+
+
+
+    </main>
+
+
+
+
+    <footer>
+
+        <div id="footer1">
+            <p>The best day to join Bankist was one year <br> ago. The second best is today!</p>
+        </div>
+        <div id="footer2"><button id="createAccount">Open Your Free Account Today</button></div>
+
+
+        <hr>
+        <div class="quicklinks">
+            <a href="">About</a>
+            <a href=""> Pricing</a>
+            <a href="">Terms of Use</a>
+            <a href=""> Privacy Policy</a>
+            <a href="">Careers</a>
+            <a href=""> Blog</a>
+            <a href="">Contact Us</a>
+        </div>
+
+
+
+        <div class="logo"> <img src="logo.jpeg" alt="ViraBank"> <span>ViraBank</span> </div>
+
+        <p id="copy">&copy; Zohaib Khan | Practice project <a href="https://www.linkedin.com/in/zohaib-khan">Linkden</a>
+            <a href="https://khan-1291.github.io/zohaibKhan/">Personal Website</a>
+        </p>
+    </footer>
+    <script src="bank.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

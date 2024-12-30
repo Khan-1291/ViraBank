@@ -1,0 +1,308 @@
+
+
+
+
+#profile{
+  
+  
+
+   
+    font-weight: bold;
+text-align: justify;
+justify-content: center;
+margin-left: 10%;
+font-size: x-large;
+font-weight: bold;
+
+
+}
+#user-info {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #dacb03;
+    width: max-content;
+    padding: 20px;
+border-radius: 20px;
+margin-bottom: 10px;
+
+}
+
+
+.greet h1{
+font-size: xx-large;
+font-weight: bold;
+width: 50%;
+margin-left: 10%;
+margin-top: 10%;
+
+
+}
+.AccountManagment button{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgb(70, 173, 70);
+    color: rgb(0, 1, 12);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+#credentials{
+    display: none;
+}
+
+
+
+.account div{
+    position: absolute;
+    height: max-content;
+    margin-top: -500px;
+   margin-left: 30%;
+    width: 650px;
+   
+    background-color: rgb(190, 190, 190);
+    
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px;
+    
+}
+
+.account input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: left;
+    font-size: large;
+    text-indent: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.account label{
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-left: 210px;
+}
+
+.account p{
+    font-size: large;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.account #submit {
+    text-align: center;
+    width: 250px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: rgb(98, 199, 98);
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 30%;
+
+
+}
+
+.account span:hover{
+    background-color: #7a7979;
+}
+.account p{
+    font-size: xx-large;
+    font-weight: bold;
+    color: green;
+}
+
+.account table th {
+    margin-left: 150px;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    border: 4px solid darkorchid;
+    
+    
+    
+
+}
+.account table td{
+    margin-left: 150px;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    border: 4px solid darkorchid;
+    color: #2b16e7;
+    padding: 3px;
+}
+.account button{
+   
+    width: 200px;
+    height: 45px;
+    margin-left: 35%;
+    border-radius: 10px;
+    background-color: #2b16e7;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    text-indent: 10px;
+    margin-bottom: 20px;
+
+
+}
+#transfar-section,#deposit-section,#with-section,#transictionHistory{
+display: none;
+}
+
+
+
+#cross{
+    background-color:none;
+
+}
+#cross:hover{
+    background-color: none;
+
+}
+.account span:hover{
+    background-color: rgb(190, 190, 190);
+
+}
+.transaction-message {
+    display: none;
+    margin-top: -300px;
+   
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border: 2px solid #28a745;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    z-index: 1000;
+}
+
+.transaction-message h2 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.transaction-message p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.transaction-message button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transaction-message button:hover {
+    background-color: #218838;
+}
+
+@media only screen and (max-width: 768px) {
+    #profile {
+        margin-left: 5%;
+        font-size: 14px;
+    }
+    #user-info{
+        width: 80%;
+    }
+.greet{
+    margin-top: 70%;
+}
+    .greet h1 {
+        font-size: 24px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    button{
+        text-align: center;
+        line-height: 45px;
+        text-indent: 30px;
+    }
+
+    .AccountManagment button {
+        width: 80%;
+        height: 40px;
+        font-size: medium;
+        margin: 10px auto;
+    }
+
+    .account div {
+        margin-top: 0;
+        margin-left: 5%;
+        width: 90%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top:-200px;
+    }
+
+    .account input {
+        width: 90%;
+        font-size: medium;
+        margin: 10px auto;
+    }
+
+    .account label {
+        margin-left: 10%;
+    }
+
+    .account p {
+        font-size: 20px;
+    }
+
+    .account #submit {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .account table th,
+    .account table td {
+        font-size: medium;
+        padding: 5px;
+    }
+
+    .account button {
+        width: 80%;
+        margin: 10px auto;
+        margin-left:10%;
+    }
+
+    .transaction-message {
+        width: 80%;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .transaction-message h2 {
+        font-size: 18px;
+    }
+
+    .transaction-message p {
+        font-size: 14px;
+    }
+
+    .transaction-message button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

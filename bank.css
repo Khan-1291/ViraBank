@@ -681,5 +681,105 @@ button{
         display: block;
     }
 }
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(58, 55, 55);
+    color: white;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+    width: auto;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.navbarLinks {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbarLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbarLinks a:hover {
+    color: lightgray;
+}
+
+/* Button Styling */
+#createAccount {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#createAccount:hover {
+    background-color: #e65a50;
+}
+
+/* Mobile Styles */
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+
+/* Responsive Navbar for Small Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbarLinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(58, 55, 55);
+        text-align: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .navbarLinks.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
 
         

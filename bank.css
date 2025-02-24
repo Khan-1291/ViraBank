@@ -467,7 +467,7 @@ button{
             .navbarLinks > * {
 
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 font-size: medium;
               column-gap: 10px;
               

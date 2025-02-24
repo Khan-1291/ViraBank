@@ -1,3 +1,6 @@
+function toggleMenu() {
+    document.querySelector(".navbarLinks").classList.toggle("active");
+}
 
 
 
